@@ -1333,6 +1333,12 @@
     .blog-card {
         width: calc(33% - 13.3px);
     }
+    @media (max-width: 685px) {
+        .blog-card{
+            width: 100%;
+        }
+        
+    }
     
     .blog-card-content {
         display: flex;
