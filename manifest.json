@@ -1,0 +1,25 @@
+{
+    "background_color": "#349E5B",
+    "description": "",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "Recase Imobil",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "Recase",
+    "start_url": "/https://ferdinand0000.github.io/Repository/",
+    "theme_color": "#349E5B",
+    "categories": [],
+    "screenshots": [],
+    "shortcuts": [],
+    "icons":[
+        {
+            "src": "[.png]",
+            "sizes": "89x89"
+        },
+        {
+            "src": "[.png]",
+            "sizes": "142x142"
+        }
+    ]
+  }
