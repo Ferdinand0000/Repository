@@ -12,18 +12,26 @@
     "categories": [],
     "screenshots": [],
     "shortcuts": [],
-    "icons":[
+    "icons": [
         {
-            "src": "[.png]",
-            "sizes": "89x89"
+            "src": "8989.png",
+            "sizes": "89x89",
+            "type": "image/png"
         },
         {
-            "src": "[.png]",
-            "sizes": "142x142"
+            "src": "142412.png",
+            "sizes": "142x142",
+            "type": "image/png"
         },
         {
-            "src": "[.png]",
-            "sizes": "512x512"
+            "src": "/icons/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "512512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ]
-  }
+}
