@@ -4,9 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="manifest" href="manifest.json">
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+            
+            const installApp = document.getElementById('installApp');
+            installApp.addEventListener('click',  () => {
+                debugger
+                if (deferredPrompt !== null) {
+                    deferredPrompt.prompt();
+                    const { outcome } = deferredPrompt.userChoice;
+                    if (outcome === 'accepted') {
+                        deferredPrompt = null;
+                    }
+                }
+            });
+          });
+        }
+
+
+        </script>
+        <script>scr="pwabuilder-sw.js.js"</script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recase Imobil</title>
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="512512.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/settings.css">
@@ -33,7 +59,7 @@
                 </select>
                 <div class="header-buttons">
                     <a href="#" class="btn1">Ipotecă</a>
-                    <a href="#" class="btn2">Login</a>
+                    <a id="installApp" class="btn2">Login</a>
                 </div>
             </div>
             <div class="burger" onclick="openMenu(this)">
